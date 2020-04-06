@@ -106,7 +106,7 @@ def driver():
     desired_caps['resetKeyboard'] = True
     desired_caps['automationName'] = "Uiautomator2"
     desired_caps['autoAcceptAlerts'] = True
-    desired_caps['newCommandTimeout'] = 400
+    desired_caps['newCommandTimeout'] = 66666
     desired_caps['recreateChromeDriverSessions'] = True
     _driver = webdriver.Remote('http://localhost:'+Appium_Port+'/wd/hub', desired_caps)
     yield _driver
